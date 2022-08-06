@@ -1,0 +1,69 @@
+.supervisor-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1250px;
+  margin: 0 auto;
+  .supervisor-left {
+    background: #ffa900;
+    border-radius: 25px;
+    max-height: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    img {
+      width: 100%;
+      max-width: 358px;
+      object-fit: contain;
+    }
+  }
+  .supervisor-right {
+    background: linear-gradient(53.8deg, #ffffff 0%, #f5f5f5 100%);
+    padding: 3vh;
+    border-radius: 24px;
+    h4 {
+      font-size: 24px;
+    }
+    .supervisor {
+      color: #ffa900;
+    }
+    .supervisor-name {
+      color: #0057ff;
+      font-family: "Mont Bold", serif;
+    }
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        margin-top: 16px;
+        p {
+          margin: 0;
+          font-family: "Mont Regular", serif;
+          span {
+            font-family: "Mont Bold", serif;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .supervisor-container {
+    max-width: 95%;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .supervisor-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .supervisor-container .supervisor-right ul li p {
+    font-size: 16px;
+  }
+}

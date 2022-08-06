@@ -1,0 +1,96 @@
+.courses-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  h1 {
+    font-family: "Mont Bold", serif;
+    text-align: center;
+    font-size: 48px;
+  }
+  .owl-carousel {
+    .owl-stage {
+      padding: 20px 0px;
+      .course-box {
+        .course-card {
+          background: white;
+          border-radius: 30px;
+          box-shadow: 28px 17px 34px -19px rgb(0 0 0 / 10%);
+          padding: 25px 0px 0px 0px;
+          min-height: 388px;
+          .course-card-up {
+            img {
+              width: 111px;
+              height: 111px;
+              margin: 0 auto;
+            }
+            h2 {
+              margin-top: 10px;
+              font-family: "Mont Bold", serif;
+              font-size: 20px;
+              text-align: center;
+            }
+          }
+          .course-card-down {
+            padding: 0px 19px 19px 19px;
+            ul {
+              li {
+                margin-top: 10px;
+                font-family: "Mont Regular", serif;
+                display: flex;
+                align-items: flex-start;
+                gap: 8px;
+                font-size: 13px;
+                line-height: 18px;
+                img {
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .courses-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      display: inline-flex;
+      background: linear-gradient(180deg, #00a3ff 0%, #0057ff 100%);
+      border: 0;
+      border-radius: 21px;
+      padding: 20px 60px;
+      span {
+        color: white;
+        font-family: "Mont Bold", serif;
+        letter-spacing: 0.06rem;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .courses-container {
+    max-width: 95%;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .courses-container {
+    h1 {
+      font-size: 32px;
+    }
+  }
+}
+
+@media all and (max-width: 590px) {
+  .courses-container {
+    .course-box {
+      max-width: 276px;
+      margin: 0 auto;
+    }
+  }
+}

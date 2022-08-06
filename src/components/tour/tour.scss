@@ -1,0 +1,121 @@
+.tour-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  h1 {
+    font-family: "Mont Bold", serif;
+    text-align: center;
+    font-size: 48px;
+  }
+  p {
+    font-family: "Mont Regular", serif;
+    text-align: center;
+    font-size: 16px;
+    width: 35%;
+    margin: 0 auto;
+  }
+  .boxes-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    width: 98%;
+    margin: 0 auto;
+    .left-box {
+      background: linear-gradient(98.3deg, #ffd900 0%, #ffd452 100%);
+      border-radius: 16px;
+      padding: 14px 46px;
+      .fields {
+        display: grid;
+        padding: 3vh;
+        input {
+          padding: 16px 25px;
+          border: 0;
+          border-radius: 15px;
+          margin-top: 16px;
+          outline: none;
+        }
+        textarea {
+          border: 0;
+          border-radius: 15px;
+          padding: 16px 25px;
+          margin-top: 16px;
+          outline: none;
+        }
+      }
+      button {
+        border: 0;
+        border-radius: 16px;
+        background: linear-gradient(180deg, #00a3ff 0%, #0057ff 100%);
+        padding: 16px 20px;
+        width: 100%;
+        color: white;
+        font-family: "Mont Bold", serif;
+        font-size: 16px;
+      }
+    }
+    .right-box {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .tour-container {
+    max-width: 95%;
+  }
+}
+
+@media all and (max-width: 1040px) {
+  .tour-container {
+    p {
+      width: 100%;
+    }
+    .boxes-con {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+      .right-box {
+        img {
+          max-width: 580px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 776px) {
+  .tour-container {
+    .boxes-con {
+      .right-box {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  .tour-container {
+    h1 {
+      font-size: 32px;
+    }
+  }
+}
+
+@media all and (max-width: 400px) {
+  .tour-container .boxes-con .left-box {
+    padding: 3vh;
+  }
+  .tour-container .boxes-con .left-box .fields {
+    padding: 0;
+  }
+  .tour-container .boxes-con .left-box button {
+    margin-top: 16px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .tour-container .boxes-con .left-box {
+    padding: 2vh;
+  }
+}

@@ -1,0 +1,38 @@
+.tool-bar {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.contact {
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    gap: 10px;
+    transition: all 0.2s;
+    svg {
+      circle {
+        transition: all 0.2s;
+      }
+      path {
+        transition: all 0.2s;
+      }
+    }
+    span {
+      font-size: 16px;
+    }
+    &:hover {
+      color: #ffc301;
+      svg {
+        circle {
+          fill: #ffc301;
+        }
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+}
